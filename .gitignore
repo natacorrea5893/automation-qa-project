@@ -1,5 +1,6 @@
 # Específicos del curso
-Drivers
+chromedriver.exe
+geckodriver.exe
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,virtualenv,pycharm,git,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,virtualenv,pycharm,git,windows
