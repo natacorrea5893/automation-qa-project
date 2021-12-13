@@ -47,8 +47,31 @@ Feature: Gestionar la Libreta de Direcciones
   Entonces edito correctamente la/s dirección/es
 ```
 
+## Correr Pruebas con Pytest
 
-### Detalles
+Para correr TODOS los tests:
+```bash
+python -m pytest
+```
+
+Para correr todos los test dentro de un módulo:
+```bash
+python -m pytest tests/step_defs/test_service_steps.py
+```
+
+El comando para correr los test que posean un tag específico (ej. regression) es:
+```bash
+python -m pytest -k “regression”
+```
+
+Para las tags, se puede emplear cualquier comando:
+```bash
+python -m pytest -k “regression and Login”
+python -m pytest -k “regression or service”
+python -m pytest -k “not service”
+```
+
+## Detalles
 
 **Autor**:
 _Natanael Correa_
