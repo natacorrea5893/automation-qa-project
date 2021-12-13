@@ -13,7 +13,7 @@ STORE_HOME = 'https://automationteststore.com/index.php?rt=account/login'
 
 
 # Scenarios
-# scenarios('../features/Login.feature')
+scenarios('../features/Login.feature')
 scenarios('../features/AddressBook.feature')
 
 
