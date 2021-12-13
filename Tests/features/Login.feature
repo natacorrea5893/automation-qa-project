@@ -1,3 +1,4 @@
+@regression @Login
 Feature: Login in Store
   As a user
   I want to access the Store Page

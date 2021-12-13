@@ -16,6 +16,11 @@ pip install pytest
 pip install pytest-bdd
 ```
 
+Para generar los reportes utilizaremos el siguiente paquete:
+```bash
+pip install pytest-html-reporter
+```
+
 También estarán listados todos los paquetes instalados en el archivo _**requirements.txt**_ para utilizarse de la siguiente forma:
 
 ```bash
@@ -47,8 +52,39 @@ Feature: Gestionar la Libreta de Direcciones
   Entonces edito correctamente la/s dirección/es
 ```
 
+## Correr Pruebas con Pytest
 
-### Detalles
+Para correr TODOS los tests:
+```bash
+python -m pytest
+```
+
+Para correr todos los test dentro de un módulo:
+```bash
+python -m pytest tests/step_defs/test_service_steps.py
+```
+
+El comando para correr los test que posean un tag específico (ej. regression) es:
+```bash
+python -m pytest -k “regression”
+```
+
+Para las tags, se puede emplear cualquier comando:
+```bash
+python -m pytest -k “regression and Login”
+python -m pytest -k “regression or service”
+python -m pytest -k “not service”
+```
+
+## Generar Reportes
+
+Al correr cualquier test se generará el reporte en la carpeta raíz del proyecto.
+En su lugar usaremos el siguiente comando para usar la carpeta **_Reports_**:
+```bash
+python -m pytest -k test_all_steps --html-report=Reports/report.html
+```
+
+## Detalles
 
 **Autor**:
 _Natanael Correa_

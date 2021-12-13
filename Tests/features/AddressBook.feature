@@ -1,3 +1,4 @@
+@regression @AddressBook
 Feature: Manage Address Book Entries
   As a user
   I want to manage the Book Entries
