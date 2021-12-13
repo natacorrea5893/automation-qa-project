@@ -41,10 +41,10 @@ Feature: Iniciar sesión en la Tienda
 ```
 
 ```gherkin
-Feature: Iniciar sesión en la Tienda
+Feature: Gestionar la Libreta de Direcciones
   Como usuario
-  Quiero acceder a la Página Principal
-  Entonces ingreso correctamente
+  Quiero gestionar la Libreta de Direcciones
+  Entonces edito correctamente la/s dirección/es
 ```
 
 
