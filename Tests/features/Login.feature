@@ -3,12 +3,19 @@ Feature: Login in Store
   I want to access the Store Page
   So Login correctly
 
-  Scenario: Login in Store Page correctly
-  Given the Store webPage
-  When complete "agusDarwoft" and "automation"
-  Then Login correctly
+  Background:
+    Given the Store webPage
 
-  Scenario: Complete user and password wrong
-  Given the Store webPage
-  When complete "agusDarwoft" and " "
-  Then I get an Incorrect Login message "Error: Incorrect login or password provided."
+  Scenario: Login in Store Page correctly
+    When complete "agusDarwoft" and "automation"
+    Then Login correctly
+
+  Scenario Outline: Complete user and password wrong
+    When complete "<User>" and "<Password>"
+    Then I get an Incorrect Login message "Error: Incorrect login or password provided."
+
+    Examples: User and Password combinations
+      | User       | Password   |
+      |agusDarwoft | 123        |
+      | .          | 123        |
+      | a          | automation |
