@@ -37,14 +37,14 @@ del intérprete (también se recomienda tenerlos en el proyecto, dentro de una c
 Feature: Iniciar sesión en la Tienda
   Como usuario
   Quiero acceder a la Página Principal
-  Entonces ingreso correctamente
+  E ingreso correctamente
 ```
 
 ```gherkin
 Feature: Iniciar sesión en la Tienda
   Como usuario
   Quiero acceder a la Página Principal
-  Entonces ingreso correctamente
+  E ingreso correctamente
 ```
 
 
