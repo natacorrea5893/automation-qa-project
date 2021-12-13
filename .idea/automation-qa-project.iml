@@ -5,8 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Pages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tests" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/automation-venv" />
+      <excludeFolder url="file://$MODULE_DIR$/venv-automation" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (automation-qa-project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
