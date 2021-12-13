@@ -1,8 +1,8 @@
 # Específicos del curso
 chromedriver.exe
 geckodriver.exe
-report.html
-output.json
+./**/report.html
+./**/output.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,virtualenv,pycharm,git,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,virtualenv,pycharm,git,windows
