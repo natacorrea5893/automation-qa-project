@@ -30,6 +30,24 @@ Descargar los WebDrivers
 [Chrome Driver](https://chromedriver.chromium.org/downloads). Pegar los archivos .exe en el directorio
 del intérprete (también se recomienda tenerlos en el proyecto, dentro de una carpeta _**Drivers**_ ).
 
+
+## Pruebas
+
+```gherkin
+Feature: Iniciar sesión en la Tienda
+  Como usuario
+  Quiero acceder a la Página Principal
+  Entonces ingreso correctamente
+```
+
+```gherkin
+Feature: Iniciar sesión en la Tienda
+  Como usuario
+  Quiero acceder a la Página Principal
+  Entonces ingreso correctamente
+```
+
+
 ### Detalles
 
 **Autor**:

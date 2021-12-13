@@ -41,8 +41,16 @@ def login(browser, user, password):
 
 # Then Steps
 @then(parsers.parse('Login correctly'))
-def is_ok(browser):
+def login_ok(browser):
     account_page = AccountPage(browser)
 
     assert account_page.getTitle().text == "MY ACCOUNT"
     print('Step: Login successfully - My Account Page is displayed.')
+
+
+@then(parsers.parse('I get an Incorrect Login message "{error_message}"'))
+def login_fail(browser, error_message):
+    login_page = LoginPage(browser)
+
+    assert error_message in login_page.getLoginError().text
+    print('Step: Login wrong - Login Error is displayed.')

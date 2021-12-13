@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators():
-    TITLE = (By.CSS_SELECTOR, 'span.maintext')
+    TITLE = (By.CSS_SELECTOR, 'span[class="maintext"]')
 
 
 class AccountPage:

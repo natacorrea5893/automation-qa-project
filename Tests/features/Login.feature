@@ -7,3 +7,8 @@ Feature: Login in Store
   Given the Store webPage
   When complete "agusDarwoft" and "automation"
   Then Login correctly
+
+  Scenario: Complete user and password wrong
+  Given the Store webPage
+  When complete "agusDarwoft" and " "
+  Then I get an Incorrect Login message "Error: Incorrect login or password provided."
